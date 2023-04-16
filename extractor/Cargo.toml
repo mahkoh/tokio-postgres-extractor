@@ -1,0 +1,20 @@
+[package]
+name = "tokio-postgres-extractor"
+version = "0.7.0"
+edition = "2021"
+description = "High-performance extractors for tokio_postgres"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mahkoh/tokio-postgres-extractor"
+readme = "../README.md"
+keywords = ["database", "postgres", "postgresql", "sql", "async"]
+categories = ["database"]
+
+[dependencies]
+futures-core = "0.3.28"
+pin-project = "1.0.12"
+tokio-postgres = "0.7.8"
+tokio-postgres-extractor-macros = { version = "=0.7.0", path = "../macros" }
+
+[dev-dependencies]
+tokio = { version = "1.27.0", features = ["rt", "macros"] }
+futures-util = "0.3.28"
